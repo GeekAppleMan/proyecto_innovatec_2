@@ -1,0 +1,1 @@
+<?php header('Location: ../proyecto_innovatec_2/login.php'); ?>
