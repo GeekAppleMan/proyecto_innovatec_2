@@ -1,3 +1,17 @@
+<?php
+session_start();
+include_once '../../Conexion/mysql.php';
+$db = new Conect_MySql();
+
+setlocale(LC_ALL,"es_ES");
+$fechaactual = 	"Fecha: " . date("d") . " / " . date("m") . " / " . date("Y");
+if(!isset($_SESSION["id_usuario"]))  
+{
+   header("Location: ../../logout.php");
+}else{
+    $nombre = $_SESSION['nombre'];
+}  
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
