@@ -1,17 +1,3 @@
-<?php
-session_start();
-include_once '../../Conexion/mysql.php';
-$db = new Conect_MySql();
-
-setlocale(LC_ALL,"es_ES");
-$fechaactual = 	"Fecha: " . date("d") . " / " . date("m") . " / " . date("Y");
-if(!isset($_SESSION["id_usuario"]))  
-{
-   header("Location: ../../logout.php");
-}else{
-    $nombre = $_SESSION['nombre'];
-}  
-?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -34,7 +20,7 @@ if(!isset($_SESSION["id_usuario"]))
       <div id="login">   
           <h1>Bienvenido!</h1>
           
-          <form action="/" method="post">
+          <form class="form-signin" id="loginform" role="form" action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
           
             <div class="field-wrap">
             <label>
@@ -52,7 +38,8 @@ if(!isset($_SESSION["id_usuario"]))
           
           <p class="forgot"><a href="#">¿Se te olvido tu contraseña?</a></p>
           
-          <button class="button button-block">ENTRAR</button>
+          
+          <button type="submit" class="button button-block">ENTRAR</button>
           
           </form>
 
@@ -61,7 +48,7 @@ if(!isset($_SESSION["id_usuario"]))
         <div id="signup">   
           <h1>Registrarse</h1>
           
-          <form action="/" method="post">
+          <form action="/" method="post" id="frmNuevoUsuario">
           
           <div class="top-row">
             <div class="field-wrap">
