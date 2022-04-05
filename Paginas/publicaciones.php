@@ -13,7 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
    
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href=".../Diseño/css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
@@ -40,10 +40,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="http://192.168.1.177/innovatec/principal.html">Inicio</a>
+                <a class="nav-link" aria-current="page" href="../principal.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="http://192.168.1.177/innovatec/Publicaciones.php">Publicaciones</a>
+                <a class="nav-link" href="../Paginas/publicaciones.php">Publicaciones</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#equipo">Equipo</a>
@@ -67,7 +67,7 @@
           ?>
           <article class="post">
             <div class="post-header">
-              <img src="cheems.jpg" id="img">
+              <img src="../Diseño/img/cheems.jpg" id="img">
             <div class = "post-img-1"></div>
             </div>
             <div class = "post-body">
